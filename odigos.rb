@@ -5,20 +5,20 @@
 class Odigos < Formula
   desc "Odigos CLI Utility"
   homepage "https://odigos.io"
-  version "1.0.12"
+  version "1.0.13"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/keyval-dev/odigos/releases/download/v1.0.12/cli_1.0.12_darwin_arm64.tar.gz"
-      sha256 "daa753b54a9a307171be45ba40cc4fb40767fe41c109583df4bfcf342a9a3199"
+      url "https://github.com/keyval-dev/odigos/releases/download/v1.0.13/cli_1.0.13_darwin_arm64.tar.gz"
+      sha256 "4f51eeda6939505acebebab399aec86b15f90b34f51739030efd476816a2eabe"
 
       def install
         bin.install "odigos"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/keyval-dev/odigos/releases/download/v1.0.12/cli_1.0.12_darwin_amd64.tar.gz"
-      sha256 "9e169a98ae273b6916a839e9b5bd27726f89c63ca763d1879a925902473053dd"
+      url "https://github.com/keyval-dev/odigos/releases/download/v1.0.13/cli_1.0.13_darwin_amd64.tar.gz"
+      sha256 "14bb7b10f4d07f34a6fd5994f9267863a340ab0d9192b6ae8a03bd291d997e03"
 
       def install
         bin.install "odigos"
@@ -27,17 +27,17 @@ class Odigos < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/keyval-dev/odigos/releases/download/v1.0.12/cli_1.0.12_linux_arm64.tar.gz"
-      sha256 "814b415966fb2bed9e5eaf8fb40d49a0d80c67badffd8c6f4f4fa6fd707380dd"
+    if Hardware::CPU.intel?
+      url "https://github.com/keyval-dev/odigos/releases/download/v1.0.13/cli_1.0.13_linux_amd64.tar.gz"
+      sha256 "39ac73ed58bca60492c428daa8f9984ecd46f8cf36cb201df40a08dd903d0e6e"
 
       def install
         bin.install "odigos"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/keyval-dev/odigos/releases/download/v1.0.12/cli_1.0.12_linux_amd64.tar.gz"
-      sha256 "ca6057e11bad8921e38cbd46e51051be2554e376b21bc8ba26e2c3e331b549c2"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/keyval-dev/odigos/releases/download/v1.0.13/cli_1.0.13_linux_arm64.tar.gz"
+      sha256 "489bf144d7dc93c8fbd39b3d0b9d7a121ee476f81c9f7265ccdae9e38ab8b60e"
 
       def install
         bin.install "odigos"
