@@ -5,20 +5,20 @@
 class Odigos < Formula
   desc "Odigos CLI Utility"
   homepage "https://odigos.io"
-  version "1.0.137"
+  version "1.0.138"
 
   on_macos do
     on_intel do
-      url "https://github.com/odigos-io/odigos/releases/download/v1.0.137/cli_1.0.137_darwin_amd64.tar.gz"
-      sha256 "9b5a8777828a64454133734a868f6f671188558fb9e803481cdc68152690b18d"
+      url "https://github.com/odigos-io/odigos/releases/download/v1.0.138/cli_1.0.138_darwin_amd64.tar.gz"
+      sha256 "b157efecf91c29f1be773e8fb83cc4019491b0002840aa971d6f6b8772b5f0dd"
 
       def install
         bin.install "odigos"
       end
     end
     on_arm do
-      url "https://github.com/odigos-io/odigos/releases/download/v1.0.137/cli_1.0.137_darwin_arm64.tar.gz"
-      sha256 "069fb598688d7328fa24be47adb8b2030327d642958ba103d6123ce0a34774d4"
+      url "https://github.com/odigos-io/odigos/releases/download/v1.0.138/cli_1.0.138_darwin_arm64.tar.gz"
+      sha256 "049112c49ba102ad77d71045ba319e0ec491ff2cc6ddc7678f7b36a892538615"
 
       def install
         bin.install "odigos"
@@ -29,8 +29,8 @@ class Odigos < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/odigos-io/odigos/releases/download/v1.0.137/cli_1.0.137_linux_amd64.tar.gz"
-        sha256 "50400313caf1ca671a4f9401c4622426a92ea2bff700c8b41933211df4861754"
+        url "https://github.com/odigos-io/odigos/releases/download/v1.0.138/cli_1.0.138_linux_amd64.tar.gz"
+        sha256 "3cfcde29c1d650f9dba8aa19245355c96f258cd936afc236368e2d4e3dd7414f"
 
         def install
           bin.install "odigos"
@@ -39,8 +39,8 @@ class Odigos < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/odigos-io/odigos/releases/download/v1.0.137/cli_1.0.137_linux_arm64.tar.gz"
-        sha256 "c813f10eb62d365625d7b5479f2098a493f6621e1ca2636a6c51ebb8c45bd503"
+        url "https://github.com/odigos-io/odigos/releases/download/v1.0.138/cli_1.0.138_linux_arm64.tar.gz"
+        sha256 "833f9de00b1c5520193d4b7e36ae07bf90692d511d7877bba98829597674960b"
 
         def install
           bin.install "odigos"
