@@ -5,20 +5,20 @@
 class Odigos < Formula
   desc "Odigos CLI Utility"
   homepage "https://odigos.io"
-  version "1.32.1"
+  version "1.32.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/odigos-io/odigos/releases/download/v1.32.1/cli_1.32.1_darwin_amd64.tar.gz"
-      sha256 "58c89be2e799819caa88ace891482669f8b42c80266fdef0fb56e0aa5a7b86e2"
+      url "https://github.com/odigos-io/odigos/releases/download/v1.32.2/cli_1.32.2_darwin_amd64.tar.gz"
+      sha256 "41ba83c7dd5036bc9d879c07b22eb576d8420fbf404262599c838e20c93916cd"
 
       define_method(:install) do
         bin.install "odigos"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/odigos-io/odigos/releases/download/v1.32.1/cli_1.32.1_darwin_arm64.tar.gz"
-      sha256 "57e07714c29ca95c3ee8f5c58c28d38d295691a89b32db264deb40738af77b43"
+      url "https://github.com/odigos-io/odigos/releases/download/v1.32.2/cli_1.32.2_darwin_arm64.tar.gz"
+      sha256 "a04f9ca39b0c2ea5902a55046a8c5d7082c9dcb13ccf2746481512d9e1c2bb1c"
 
       define_method(:install) do
         bin.install "odigos"
@@ -28,15 +28,15 @@ class Odigos < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/odigos-io/odigos/releases/download/v1.32.1/cli_1.32.1_linux_amd64.tar.gz"
-      sha256 "959f9ed3152f90f2b52db4c7216ba9f9c750200421dde750a04d110e6e0f8fda"
+      url "https://github.com/odigos-io/odigos/releases/download/v1.32.2/cli_1.32.2_linux_amd64.tar.gz"
+      sha256 "67f0138ecdea4368b0c15c1d0eaca10b51b8e99d22ca9602166002addf2561e4"
       define_method(:install) do
         bin.install "odigos"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/odigos-io/odigos/releases/download/v1.32.1/cli_1.32.1_linux_arm64.tar.gz"
-      sha256 "10cdd776c66ac76760d8057f1b144ae30b827ae52d89d2733a90f7a6cdc197d4"
+      url "https://github.com/odigos-io/odigos/releases/download/v1.32.2/cli_1.32.2_linux_arm64.tar.gz"
+      sha256 "60477aee9a825c75a4da378a0e1095f5a75e12ebf60568ce8ddb03b97b295a27"
       define_method(:install) do
         bin.install "odigos"
       end
