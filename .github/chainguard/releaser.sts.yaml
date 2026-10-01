@@ -1,5 +1,5 @@
 issuer: https://token.actions.githubusercontent.com
-subject_pattern: ^repo:odigos-io/odigos:ref:refs/heads/(main|releases/v[0-9]+\.[0-9]+\.0)$
+subject_pattern: '^repo:odigos-io(@84347062)?/odigos(@501095512)?:ref:refs/heads/(main|releases/v[0-9]+\.[0-9]+\.0)$'
 
 permissions:
   contents: write
